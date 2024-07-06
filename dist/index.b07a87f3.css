@@ -1,2 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
 
+body, button {
+  color: #263e24;
+  background-color: #fffbdd;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Roboto Slab, serif;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+  min-width: 100%;
+  display: block;
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  src: url("roboto-slab-v34-cyrillic_latin-300.1a5587cc.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-300.518198ca.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  src: url("roboto-slab-v34-cyrillic_latin-regular.6f4f1302.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-regular.add926b9.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 600;
+  src: url("roboto-slab-v34-cyrillic_latin-600.9cad7f2c.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-600.5659af12.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 700;
+  src: url("roboto-slab-v34-cyrillic_latin-700.0195cd90.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-700.10d80999.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 800;
+  src: url("roboto-slab-v34-cyrillic_latin-800.bdd3b713.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-800.0d010f07.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 400;
+  src: url("eb-garamond-v27-cyrillic_latin-regular.23e141f3.woff2") format("woff2"), url("eb-garamond-v27-cyrillic_latin-regular.f1daa143.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 500;
+  src: url("eb-garamond-v27-cyrillic_latin-500.e030993c.woff2") format("woff2"), url("eb-garamond-v27-cyrillic_latin-500.5067e6d7.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 600;
+  src: url("eb-garamond-v27-cyrillic_latin-600.956c7ad1.woff2") format("woff2"), url("eb-garamond-v27-cyrillic_latin-600.3348b001.woff") format("woff");
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #263e24;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
 /*# sourceMappingURL=index.b07a87f3.css.map */
