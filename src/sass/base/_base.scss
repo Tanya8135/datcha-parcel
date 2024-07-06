@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  background-color: $primary-bg;
+  color: $primary-text;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  // height: auto;
+  object-fit: cover;
+}
