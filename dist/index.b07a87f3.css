@@ -13,7 +13,7 @@ body, button {
 
 img {
   object-fit: cover;
-  min-width: 100%;
+  max-width: 100%;
   display: block;
 }
 
