@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"1v14V":[function(require,module,exports) {
+})({"farZc":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
+module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,8 +583,37 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"4M6V8":[function(require,module,exports) {
+},{}],"8lqZg":[function(require,module,exports) {
+var _indexScss = require("./sass/index.scss");
+var _burgerMenu = require("./js/burger-menu"); // import './js/components/heroSlider';
+ // import './js/components/last-public';
+ // import './js/catalog/loadMorePoufs';
+ // import './js/catalog/loadMoreTables';
+ // import './js/openCard';
 
-},{}]},["1v14V","4M6V8"], "4M6V8", "parcelRequiref7e2")
+},{"./sass/index.scss":"9OQSl","./js/burger-menu":"egJfa"}],"9OQSl":[function() {},{}],"egJfa":[function(require,module,exports) {
+(()=>{
+    const mobileMenu = document.querySelector(".js-menu-container");
+    const openMenuBtn = document.querySelector(".js-open-menu");
+    const closeMenuBtn = document.querySelector(".js-close-menu");
+    const toggleMenu = ()=>{
+        const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+        openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+        mobileMenu.classList.toggle("is-open");
+        const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
+        bodyScrollLock[scrollLockMethod](document.body);
+    };
+    openMenuBtn.addEventListener("click", toggleMenu);
+    closeMenuBtn.addEventListener("click", toggleMenu);
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia("(min-width: 768px)").addEventListener("change", (e)=>{
+        if (!e.matches) return;
+        mobileMenu.classList.remove("is-open");
+        openMenuBtn.setAttribute("aria-expanded", false);
+    // bodyScrollLock.enableBodyScroll(document.body);
+    });
+})();
 
-//# sourceMappingURL=datcha-parcel.59712999.js.map
+},{}]},["farZc","8lqZg"], "8lqZg", "parcelRequiref7e2")
+
+//# sourceMappingURL=index.975ef6c8.js.map
