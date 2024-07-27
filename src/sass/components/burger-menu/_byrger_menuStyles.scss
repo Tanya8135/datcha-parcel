@@ -1,0 +1,142 @@
+.price-bm-title {
+  @include short-font(25px, 0.05em);
+  padding: 12px 0 24px 0;
+  text-align: center;
+}
+
+.BM {
+  display: block;
+}
+
+.BM-list {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.BM-item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+}
+
+.BM-text {
+  @include short-font(16px, 0.01em);
+  max-width: 180px;
+}
+
+.BM-prise {
+  @include short-font(16px, 0.01em);
+  margin-left: 20px;
+}
+
+.BM-item-center {
+  display: flex;
+  justify-content: center;
+}
+
+.ps-text {
+  @include short-font(16px, 0.01em);
+
+  font-style: italic;
+}
+
+.BM-descr {
+  display: block;
+  margin-left: 32px;
+}
+
+.price-bm-subtitle {
+  @include short-font(18px, 0.05em);
+  margin-bottom: 12px;
+}
+
+.BM-item-descr {
+  @include short-font(16px, 0.01em);
+  margin-left: 16px;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.menuContacts {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+.menuContactsList {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px 0;
+  // margin: 0;
+}
+
+// .menuContactsItem {
+//   // display: inline-flex;
+//   margin-right: 24px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+.menuContactsLink {
+  @include font(16px, 600, 0.01em);
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.address-bm-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+}
+
+.map-bm {
+  padding: 10px 10px 10px 0;
+}
+
+// .icon-map {
+//   @include min-mobile {
+//     max-width: 32px;
+//     height: 35px;
+//   }
+// }
+
+.address-link-bm {
+  @include font(16px, 600, 0.03em);
+}
+
+.menuSocial {
+  display: flex;
+  justify-content: center;
+}
+
+.menuSocialList {
+  padding: 0;
+  list-style: none;
+}
+
+.menuSocialItem {
+  display: inline-flex;
+}
+
+.menuSocialLink {
+  @include font(12px, 500, 0.01em);
+
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.menuSocialBorder {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin: 0 10px 0 10px;
+}
