@@ -87,3 +87,14 @@
       format('woff2'),
     url('/src/fonts/eb-garamond-v27-cyrillic_latin-600.woff') format('woff');
 }
+
+/*Marck Script*/
+//Regular
+@font-face {
+  font-display: swap;
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/marck-script-v20-latin-regular.woff2') format('woff2'),
+    url('../fonts/marck-script-v20-latin-regular.woff') format('woff');
+}
