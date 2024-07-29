@@ -342,7 +342,8 @@ address {
   text-shadow: 4px 8px 8px #90b78f9c;
   padding-top: 165px;
   font-family: Marck Script, cursive;
-  font-size: 90px;
+  font-size: 85px;
+  transform: translateX(5px);
 }
 
 .subtitle-hero {
@@ -371,6 +372,85 @@ address {
 
 .icon-color {
   fill: #cdcab3;
+}
+
+.footer {
+  background-image: linear-gradient(#c9c5a7, #c9c5a7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.logoFooter {
+  padding: 15px 0;
+}
+
+.subtitle-footer {
+  letter-spacing: .05em;
+  color: #263e24;
+  padding-bottom: 14px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .subtitle-footer {
+    font-size: 24px;
+  }
+}
+
+.contact-item {
+  color: #263e24;
+  align-items: center;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.contact-item:last-child {
+  padding-bottom: 0;
+}
+
+.contact-link {
+  letter-spacing: .05em;
+  font-size: 20px;
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .contact-link {
+    font-size: 24px;
+  }
+}
+
+.address-box {
+  padding: 32px 0;
+}
+
+.map-box {
+  align-items: center;
+  display: flex;
+}
+
+.map-icon {
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.address-link {
+  letter-spacing: .05em;
+  font-size: 20px;
+}
+
+.social-footer {
+  justify-content: center;
+  margin-left: 20px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.icon-color-footer {
+  fill: #423d1b;
 }
 
 .about {
@@ -450,7 +530,7 @@ address {
 }
 
 .photo {
-  padding: 0 15px;
+  padding: 0 15px 52px;
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {

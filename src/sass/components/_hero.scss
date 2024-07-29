@@ -58,13 +58,14 @@
   //     @include short-font(80px, 0.15em);
   //   }
 
-  @include short-font(90px, 00.15em);
+  @include short-font(85px, 00.15em);
 
   font-family: 'Marck Script', cursive;
   text-align: center;
   color: $hero-title;
   text-shadow: 4px 8px 8px $accent-shadow;
   padding-top: 165px;
+  transform: translateX(5px);
 }
 
 .subtitle-hero {
