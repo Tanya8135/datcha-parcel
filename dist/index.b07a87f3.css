@@ -81,6 +81,14 @@ img {
   src: url("eb-garamond-v27-cyrillic_latin-600.956c7ad1.woff2") format("woff2"), url("eb-garamond-v27-cyrillic_latin-600.3348b001.woff") format("woff");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: Marck Script;
+  font-style: normal;
+  font-weight: 400;
+  src: url("marck-script-v20-latin-regular.0a014b16.woff2") format("woff2"), url("marck-script-v20-latin-regular.7917d989.woff") format("woff");
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -309,5 +317,59 @@ address {
 .menuSocialBorder {
   border-right: 1px solid #21212133;
   margin: 0 10px;
+}
+
+.hero {
+  background-image: linear-gradient(#0006, #0006), url("alley-fon-414.b2143ecd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+@media (min-device-pixel-ratio: 2), (resolution >= 192dpi), (resolution >= 2x) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon@2-414.86ba34c1.jpg");
+  }
+}
+
+.title-hero {
+  letter-spacing: .15em;
+  text-align: center;
+  color: #cdcab3;
+  text-shadow: 4px 8px 8px #90b78f9c;
+  padding-top: 165px;
+  font-family: Marck Script, cursive;
+  font-size: 90px;
+}
+
+.subtitle-hero {
+  letter-spacing: .15em;
+  text-align: center;
+  color: #cdcab3;
+  padding-bottom: 165px;
+  font-family: EB Garamond, serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.social {
+  justify-content: end;
+  padding: 0 15px 32px;
+  display: flex;
+}
+
+.social_item {
+  margin-right: 30px;
+}
+
+.social_item:last-child {
+  margin-right: 0;
+}
+
+.icon-color {
+  fill: #cdcab3;
 }
 /*# sourceMappingURL=index.b07a87f3.css.map */
