@@ -5,7 +5,7 @@ html {
 body, button {
   color: #263e24;
   background-color: #fffbdd;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: Roboto Slab, serif;
   overflow-x: hidden;
@@ -385,7 +385,7 @@ address {
 
 @media screen and (width >= 768px) and (width <= 1023px) {
   .footer {
-    padding: 0 20px 20px;
+    padding: 0 32px 20px;
   }
 }
 
@@ -516,14 +516,21 @@ address {
   fill: #423d1b;
 }
 
-@media screen and (width >= 1024px) and (width <= 1920px) {
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .btnBoxReserved {
+    justify-content: end;
+    display: flex;
+  }
+}
+
+@media screen and (width >= 768px) {
   .btnReserved {
     letter-spacing: .01em;
     background-color: #fff8bf;
     border: none;
     border-radius: 15px;
     margin-bottom: 20px;
-    padding: 15px 32px;
+    padding: 15px 38px;
     font-size: 16px;
     font-weight: 300;
   }
@@ -531,7 +538,9 @@ address {
   .btnReserved:active {
     box-shadow: inset 0 0 2px #00000080;
   }
+}
 
+@media screen and (width >= 1024px) and (width <= 1920px) {
   .boxForReserved {
     transform: translateY(20px);
   }
@@ -539,6 +548,13 @@ address {
 
 .about {
   padding-top: 52px;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .about {
+    max-width: 738px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
@@ -567,8 +583,8 @@ address {
 @media screen and (width >= 768px) and (width <= 1023px) {
   .titleAbout {
     letter-spacing: .05em;
-    padding: 0 0 44px 38px;
-    font-size: 60px;
+    padding: 0 0 20px;
+    font-size: 32px;
   }
 }
 
@@ -581,19 +597,7 @@ address {
   font-size: 20px;
 }
 
-@media screen and (width >= 1024px) and (width <= 1920px) {
-  .textAbout {
-    font-size: 28px;
-  }
-}
-
-@media screen and (width >= 768px) and (width <= 1023px) {
-  .textAbout {
-    font-size: 23px;
-  }
-}
-
-.textAbout--bottom {
+.textAbout:last-child {
   margin-bottom: 0;
 }
 
@@ -615,6 +619,14 @@ address {
 
 .photo {
   padding: 0 15px 52px;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .photo {
+    max-width: 702px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
@@ -643,8 +655,9 @@ address {
 @media screen and (width >= 768px) and (width <= 1023px) {
   .title-foto {
     letter-spacing: .05em;
-    padding: 0 0 20px 138px;
-    font-size: 60px;
+    margin: 0;
+    padding: 0 0 32px;
+    font-size: 36px;
   }
 }
 
@@ -659,7 +672,8 @@ address {
 
 @media screen and (width >= 768px) {
   .subtitle-foto {
-    font-size: 50px;
+    padding: 0 0 32px 20px;
+    font-size: 32px;
   }
 }
 

@@ -1,6 +1,7 @@
 .footer {
   @include tablet {
-    padding: 0 20px 20px 20px;
+    // position: relative;
+    padding: 0 32px 20px 32px;
   }
 
   @include desktop {
@@ -120,14 +121,21 @@
   fill: $icon-social-footer;
 }
 
+.btnBoxReserved {
+  @include tablet {
+    display: flex;
+    justify-content: end;
+  }
+}
+
 .btnReserved {
-  @include desktop {
+  @include tabletMin {
     @include font(16px, 300, 00.01em);
 
     border: none;
     background-color: $bg-btn;
     border-radius: 15px;
-    padding: 15px 32px;
+    padding: 15px 38px;
     margin-bottom: 20px;
 
     &:active {
@@ -137,6 +145,12 @@
 }
 
 .boxForReserved {
+  // @include tablet {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: start;
+  // }
+
   @include desktop {
     transform: translateY(20px);
   }
