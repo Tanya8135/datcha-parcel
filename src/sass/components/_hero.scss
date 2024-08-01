@@ -9,33 +9,33 @@
       url(../images/alley-fon@2-414.jpg);
   }
 
-  //   @include tabletMin {
-  //     // max-width: 1024px;
-  //     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
-  //       url(../images/alley-fon-1024.jpg);
+    @include tabletMin {
+      // max-width: 1024px;
+      background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+        url(../images/alley-fon-1024.jpg);
 
-  //     @include retina {
-  //       background-image: linear-gradient(
-  //           $bg-fon-transparent,
-  //           $bg-fon-transparent
-  //         ),
-  //         url(../images/alley-fon@2-1024.jpg);
-  //     }
-  //   }
+      @include retina {
+        background-image: linear-gradient(
+            $bg-fon-transparent,
+            $bg-fon-transparent
+          ),
+          url(../images/alley-fon@2-1024.jpg);
+      }
+    }
 
-  //   @include desktop {
-  //     max-width: 1600px;
-  //     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
-  //       url(../images/alley-fon-1180.jpg);
+    @include desktop {
+      max-width: 1600px;
+      background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+        url(../images/alley-fon-1180.jpg);
 
-  //     @include retina {
-  //       background-image: linear-gradient(
-  //           $bg-fon-transparent,
-  //           $bg-fon-transparent
-  //         ),
-  //         url(../images/alley-fon@2-1180.jpg);
-  //     }
-  //   }
+      @include retina {
+        background-image: linear-gradient(
+            $bg-fon-transparent,
+            $bg-fon-transparent
+          ),
+          url(../images/alley-fon@2-1180.jpg);
+      }
+    }
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,18 +45,14 @@
 }
 
 .title-hero {
-  //   @include desktop {
-  //     font-size: 190px;
-  //     padding-top: 150px;
-  //   }
+    @include desktop {
+      font-size: 190px;
+      padding-top: 150px;
+    }
 
-  //   @include tablet {
-  //     @include short-font(140px, 0.25em);
-  //   }
-
-  //   @include min-mobile {
-  //     @include short-font(80px, 0.15em);
-  //   }
+    @include tablet {
+      @include short-font(140px, 0.25em);
+    }
 
   @include short-font(85px, 00.15em);
 
@@ -69,14 +65,14 @@
 }
 
 .subtitle-hero {
-  //   @include desktop {
-  //     font-size: 40px;
-  //     padding-bottom: 32px;
-  //   }
+    @include desktop {
+      font-size: 40px;
+      padding-bottom: 32px;
+    }
 
-  //   @include tablet {
-  //     @include short-font(30px, 0.15em);
-  //   }
+    @include tablet {
+      @include short-font(30px, 0.15em);
+    }
 
   @include font(20px, 600, 0.15em);
 

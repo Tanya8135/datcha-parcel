@@ -121,7 +121,13 @@ address {
   display: flex;
 }
 
-.butgerMenu {
+@media screen and (width >= 768px) {
+  .header {
+    padding: 29px 52px;
+  }
+}
+
+.burgerMenu {
   fill: #263e24;
   cursor: none;
   background-color: #0000;
@@ -129,6 +135,51 @@ address {
   outline: none;
   margin: 0;
   padding: 15px 0;
+}
+
+@media screen and (width >= 768px) {
+  .burgerMenu {
+    display: none;
+  }
+}
+
+.nav-site {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav-site {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.nav-site-item {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav-site-item {
+    margin-right: 68px;
+    display: block;
+  }
+}
+
+.btn-hero-prise {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .btn-hero-prise {
+    background-color: #0000;
+    border: none;
+    display: block;
+  }
+}
+
+.nav-site-link {
+  letter-spacing: .05em;
+  font-size: 20px;
 }
 
 .page-header .conteiner {
@@ -335,6 +386,31 @@ address {
   }
 }
 
+@media screen and (width >= 768px) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon-1024.74f7de43.jpg");
+  }
+}
+
+@media screen and (width >= 768px) and (min-device-pixel-ratio: 2), screen and (width >= 768px) and (resolution >= 192dpi), screen and (width >= 768px) and (resolution >= 2x) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon@2-1024.2320f4db.jpg");
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon-1180.dabba638.jpg");
+    max-width: 1600px;
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) and (min-device-pixel-ratio: 2), screen and (width >= 1024px) and (width <= 1920px) and (resolution >= 192dpi), screen and (width >= 1024px) and (width <= 1920px) and (resolution >= 2x) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon@2-1180.9eecc4ab.jpg");
+  }
+}
+
 .title-hero {
   letter-spacing: .15em;
   text-align: center;
@@ -346,6 +422,20 @@ address {
   transform: translateX(5px);
 }
 
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .title-hero {
+    padding-top: 150px;
+    font-size: 190px;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .title-hero {
+    letter-spacing: .25em;
+    font-size: 140px;
+  }
+}
+
 .subtitle-hero {
   letter-spacing: .15em;
   text-align: center;
@@ -354,6 +444,20 @@ address {
   font-family: EB Garamond, serif;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .subtitle-hero {
+    padding-bottom: 32px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .subtitle-hero {
+    letter-spacing: .15em;
+    font-size: 30px;
+  }
 }
 
 .social {
