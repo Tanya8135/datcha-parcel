@@ -5,15 +5,17 @@
   }
 
   @include desktop {
-    padding-top: 92px;
+    max-width: 1170px;
+    margin: 0 auto;
+    // padding: 92px 0;
   }
-  padding-top: 52px;
+  padding: 52px 0;
 }
 
 .titleAbout {
   @include desktop {
-    font-size: 70px;
-    padding: 0 0 52px 38px;
+    font-size: 45px;
+    padding: 0 0 32px 38px;
   }
 
   @include tablet {
@@ -30,13 +32,13 @@
 }
 
 .textAbout {
-  // @include desktop {
-  //   font-size: 28px;
-  // }
+  @include desktop {
+    font-size: 28px;
+  }
 
-  // @include tablet {
-  //   font-size: 23px;
-  // }
+  @include tablet {
+    font-size: 23px;
+  }
 
   font-family: 'EB Garamond', serif;
   font-size: 20px;
