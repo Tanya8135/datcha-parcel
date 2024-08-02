@@ -1,4 +1,8 @@
 .price-bm-title {
+  @include mobile {
+    font-size: 27px;
+  }
+
   @include font(35px, 100, 0.05em);
   padding: 12px 0 24px 0;
   text-align: center;
@@ -37,11 +41,16 @@
   @include font(16px, 300, 0.01em);
   max-width: 282px;
   @include mobile {
+    font-size: 14px;
     max-width: 180px;
   }
 }
 
 .BM-prise {
+  @include mobile {
+    font-size: 14px;
+  }
+
   @include font(16px, 300, 0.01em);
   margin-left: 20px;
 }
@@ -52,6 +61,10 @@
 // }
 
 .ps-text {
+  @include mobile {
+    font-size: 12px;
+  }
+
   @include font(16px, 400, 0.01em);
 
   margin: 0 auto;
@@ -64,11 +77,19 @@
 }
 
 .price-bm-subtitle {
+  @include mobile {
+    font-size: 18px;
+  }
+
   @include font(23px, 100, 0.05em);
   margin-bottom: 12px;
 }
 
 .BM-item-descr {
+  @include mobile {
+    font-size: 14px;
+  }
+
   @include font(16px, 300, 0.01em);
   margin-left: 16px;
   margin-bottom: 8px;
@@ -101,12 +122,19 @@
 // }
 
 .menuContactsLink {
+  @include mobile {
+    font-size: 16px;
+  }
+
   @include font(20px, 300, 0.01em);
   color: $secondary-color;
   text-decoration: none;
 }
 
 .address-bm-box {
+  @include mobile {
+    padding-bottom: 32px;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +154,10 @@
 // }
 
 .address-link-bm {
+  @include mobile {
+    font-size: 14px;
+  }
+
   @include font(16px, 400, 0.03em);
 }
 

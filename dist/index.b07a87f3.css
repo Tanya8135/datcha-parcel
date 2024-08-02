@@ -276,6 +276,12 @@ address {
   font-weight: 100;
 }
 
+@media screen and (width >= 320px) and (width <= 449px) {
+  .price-bm-title {
+    font-size: 27px;
+  }
+}
+
 .BM {
   display: block;
 }
@@ -313,6 +319,7 @@ address {
 @media screen and (width >= 320px) and (width <= 449px) {
   .BM-text {
     max-width: 180px;
+    font-size: 14px;
   }
 }
 
@@ -323,12 +330,24 @@ address {
   font-weight: 300;
 }
 
+@media screen and (width >= 320px) and (width <= 449px) {
+  .BM-prise {
+    font-size: 14px;
+  }
+}
+
 .ps-text {
   letter-spacing: .01em;
   margin: 0 auto;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+}
+
+@media screen and (width >= 320px) and (width <= 449px) {
+  .ps-text {
+    font-size: 12px;
+  }
 }
 
 .BM-descr {
@@ -343,12 +362,24 @@ address {
   font-weight: 100;
 }
 
+@media screen and (width >= 320px) and (width <= 449px) {
+  .price-bm-subtitle {
+    font-size: 18px;
+  }
+}
+
 .BM-item-descr {
   letter-spacing: .01em;
   margin-bottom: 8px;
   margin-left: 16px;
   font-size: 16px;
   font-weight: 300;
+}
+
+@media screen and (width >= 320px) and (width <= 449px) {
+  .BM-item-descr {
+    font-size: 14px;
+  }
 }
 
 .BM-item-descr:last-child {
@@ -375,11 +406,23 @@ address {
   text-decoration: none;
 }
 
+@media screen and (width >= 320px) and (width <= 449px) {
+  .menuContactsLink {
+    font-size: 16px;
+  }
+}
+
 .address-bm-box {
   justify-content: center;
   align-items: center;
   padding-bottom: 52px;
   display: flex;
+}
+
+@media screen and (width >= 320px) and (width <= 449px) {
+  .address-bm-box {
+    padding-bottom: 32px;
+  }
 }
 
 .map-bm {
@@ -390,6 +433,12 @@ address {
   letter-spacing: .03em;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media screen and (width >= 320px) and (width <= 449px) {
+  .address-link-bm {
+    font-size: 14px;
+  }
 }
 
 .menuSocial {
