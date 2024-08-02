@@ -25,6 +25,15 @@
 
   <!-- NAV -->
   <ul class="nav-site">
+    <!-- <div class="test">
+      <button
+        type="button"
+        class="nav-site-link btn-hero-prise"
+        data-modal-open
+      >
+        Прайс
+      </button>
+    </div> -->
     <li class="nav-site-item">
       <a class="nav-site-link btn-hero-prise" data-modal-open="">Прайс</a>
     </li>
@@ -239,6 +248,16 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img srcset="/altanka1_270.43589ce1.jpg 270w, /altanka1@2_270.853e1e49.jpg 540w, /altanka1_768.63454221.jpg 590w, /altanka1@2_768.bd39e2dd.jpg 1180w, /altanka1_700.efc273fe.jpg 700w, /altanka1@2_700.75303d00.jpg 1400w" sizes="(min-width: 1180px) 700px, (min-width: 768px) 590px, (min-width: 414px) 270px, 100vw" src="/altanka1_270.43589ce1.jpg" alt="Альтанка">
+            <!-- <img
+              srcset="
+                ./images/1180/10.jpg 270w,
+                ./images/1180/10.jpg 590w,
+                ./images/1180/10.jpg 700w
+              "
+              sizes="(min-width: 1180px) 700px, (min-width: 768px) 590px, (min-width: 414px) 270px, 100vw"
+              src="./images/1180/10.jpg"
+              alt="Альтанка"
+            /> -->
           </div>
 
           <div class="swiper-slide">
@@ -387,7 +406,7 @@
 
     <div class="boxForReserved">
       <div class="btnBoxReserved">
-        <button type="button" class="btnReserved">Забронювати</button>
+        <a href="tel:+380964875185" class="btnReserved">Забронювати</a>
       </div>
 
       <div class="test">
@@ -419,6 +438,81 @@
   </div>
 </footer>
 
+    <!-- MODAL -->
+<div class="backdrop is-hidden" data-modal="">
+  <div class="modal">
+    <div class="modalBox">
+        <div class="circleTitile"></div>
+      <h2 class="title-modal">Прайс</h2>
+
+      <ul class="text-modal">
+        <li class="text-modal-item">
+          Денне перебування без заселення - 150 грн
+        </li>
+        <!-- <li class="text-modal-item">Перебування у буденний день - 300 грн з людини</li> -->
+        <!-- <li class="text-modal-item">Перебування у вихідний день - 350 грн з людини</li> -->
+        <li class="text-modal-item">Перебування з заселенням - 400 грн</li>
+
+        <li class="text-modal-item ps-text">(Ціна вказана за одну особу)</li>
+      </ul>
+
+      <h3 class="subtitle-modal">У вартість входить:</h3>
+
+      <ul class="modal-descr">
+        <li class="modal-descr-item">мангал</li>
+        <li class="modal-descr-item">альтанка</li>
+        <li class="modal-descr-item">стоянка</li>
+      </ul>
+
+      <div class="modalReservedBox">
+        <p>
+          <b class="subtitle-modal subtitle-modal-second">Зробити замовлення</b>
+        </p>
+        <div class="modalContactBox">
+          <a class="contact-modal" href="tel:+380675609482">0675609482</a>
+          <a class="contact-modal" href="tel:+380964875185">0964875185</a>
+        </div>
+      </div>
+
+      <!-- SOCILA -->
+      <div class="socialModal">
+        <ul class="socialModalList">
+          <li class="socialModalItem">
+            <a href="https://www.instagram.com/baza_otdykha_kr/" target="_blank" rel="noopener nofollow noreferrer" class="socialModalLink">Instagram
+              <span class="socialModalBorder"></span>
+            </a>
+          </li>
+          <li class="socialModalItem">
+            <a href="https://t.me/datcha_bv" target="_blank" rel="noopener nofollow noreferrer" class="socialModalLink">Telegram
+              <span class="socialModalBorder"></span>
+            </a>
+          </li>
+
+          <li class="socialModalItem">
+            <a href="https://www.facebook.com/datcha.afalina" target="_blank" rel="noopener nofollow noreferrer" class="socialModalLink">Facebook
+              <span class="socialModalBorder"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- close-btn -->
+      <button type="button" class="close-btn-modal" data-modal-close="">
+        <svg width="38" height="38">
+          <use href="/icons.adfc4680.svg#icon-btn-close"></use>
+        </svg>
+      </button>
+
+      <div class="circleL"></div>
+      <div class="circleR"></div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- SCROLL -->
+    <!-- чтобы не прокручивалась модалка -->
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
 
     <script src="/index.975ef6c8.js" defer=""></script>
     <!-- <script defer src="./slider.js"></script> -->
