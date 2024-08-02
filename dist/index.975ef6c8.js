@@ -585,13 +585,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 var _indexScss = require("./sass/index.scss");
-var _burgerMenu = require("./js/burger-menu"); // import './js/components/heroSlider';
+var _burgerMenu = require("./js/burger-menu");
+var _modal = require("./js/modal"); // import './js/components/heroSlider';
  // import './js/components/last-public';
  // import './js/catalog/loadMorePoufs';
  // import './js/catalog/loadMoreTables';
  // import './js/openCard';
 
-},{"./sass/index.scss":"9OQSl","./js/burger-menu":"egJfa"}],"9OQSl":[function() {},{}],"egJfa":[function(require,module,exports) {
+},{"./sass/index.scss":"9OQSl","./js/burger-menu":"egJfa","./js/modal":"aHHgN"}],"9OQSl":[function() {},{}],"egJfa":[function(require,module,exports) {
 (()=>{
     const mobileMenu = document.querySelector(".js-menu-container");
     const openMenuBtn = document.querySelector(".js-open-menu");
@@ -612,6 +613,20 @@ var _burgerMenu = require("./js/burger-menu"); // import './js/components/heroSl
         openMenuBtn.setAttribute("aria-expanded", false);
         bodyScrollLock.enableBodyScroll(document.body);
     });
+})();
+
+},{}],"aHHgN":[function(require,module,exports) {
+(()=>{
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"),
+        modal: document.querySelector("[data-modal]")
+    };
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
 })();
 
 },{}]},["farZc","8lqZg"], "8lqZg", "parcelRequiref7e2")

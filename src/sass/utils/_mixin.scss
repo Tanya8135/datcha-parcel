@@ -5,7 +5,13 @@
 // }
 
 @mixin mobile {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 449px) {
+    @content;
+  }
+}
+
+@mixin mobileMax {
+  @media screen and (min-width: 450px) and (max-width: 767px) {
     @content;
   }
 }
