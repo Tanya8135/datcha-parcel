@@ -35,84 +35,16 @@
     </main>
 
     <include src="./public/components/footer.html"></include>
+    <include src="./public/components/modal/modal.html"></include>
 
-        <!-- MODAL -->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal-hero">
-            <h2 class="title-modal">Прайс</h2>
-    
-            <ul class="text-modal">
-              <li class="text-modal__item">Денне перебування без заселення - 150 грн з людини</li>
-              <li class="text-modal__item">Перебування у буденний день - 300 грн з людини</li>
-              <li class="text-modal__item">Перебування у вихідний день - 350 грн з людини</li>
-              <li class="text-modal__item ps-text">(Ціна вказана за одну особу)</li>
-            </ul>
-    
-            <h3 class="subtitle-modal">У вартість входить:</h3>
-    
-            <ul class="modal-descr">
-              <li class="modal-descr__item">мангал</li>
-              <li class="modal-descr__item">альтанка</li>
-              <li class="modal-descr__item">стоянка</li>
-            </ul>
-    
-            <p class="subtitle-modal"><b>Зробити замовлення</b></p>
-            <a class="contact-modal" href="tel:+380675609482">0675609482</a>
-            <a class="contact-modal" href="tel:+380964875185">0964875185</a>
-    
-            <div class="menu-social-modal">
-              <ul class="menu-social__list">
-                <li class="menu-social__item">
-                  <a
-                    href="https://www.instagram.com/baza_otdykha_kr/"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    class="menu-social__modal"
-                    >Instagram
-                    <span class="menu-social__border"></span>
-                  </a>
-                </li>
-                <li class="menu-social__item">
-                  <a
-                    href="https://t.me/datcha_bv"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    class="menu-social__modal"
-                    >Telegram
-                    <span class="menu-social__border"></span>
-                  </a>
-                </li>
-    
-                <li class="menu-social__item">
-                  <a
-                    href="https://www.facebook.com/datcha.afalina"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    class="menu-social__modal"
-                    >Facebook
-                    <span class="menu-social__border"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-    
-            <!-- close-btn -->
-            <button type="button" class="close-btn-modal" data-modal-close>
-              <svg width="38" height="38">
-                <use href="./images/icons.svg#icon-btn-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-    
-        <!-- SCROLL -->
-        <!-- чтобы не прокручивалась модалка -->
-        <script
-          defer
-          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-          crossorigin="anonymous"
-        ></script>
+    <!-- SCROLL -->
+    <!-- чтобы не прокручивалась модалка -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
     <script type="module" src="./index.js"></script>
     <!-- <script defer src="./slider.js"></script> -->

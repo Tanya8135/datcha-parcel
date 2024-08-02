@@ -21,6 +21,14 @@ img {
   display: swap;
   font-family: Roboto Slab;
   font-style: normal;
+  font-weight: 100;
+  src: url("roboto-slab-v34-cyrillic_latin-100.70cd6d75.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-100.4080e85f.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: Roboto Slab;
+  font-style: normal;
   font-weight: 300;
   src: url("roboto-slab-v34-cyrillic_latin-300.1a5587cc.woff2") format("woff2"), url("roboto-slab-v34-cyrillic_latin-300.518198ca.woff") format("woff");
 }
@@ -305,8 +313,11 @@ address {
 
 .ps-text {
   letter-spacing: .01em;
-  font-size: 16px;
+  justify-content: center;
+  font-size: 18px;
   font-style: italic;
+  font-weight: 400;
+  display: flex;
 }
 
 .BM-descr {
@@ -929,16 +940,21 @@ address {
   pointer-events: none;
 }
 
-.modal-hero {
+.modal {
   background-color: #fffbdd;
   border-radius: 30px;
-  min-width: 550px;
+  min-width: 650px;
   min-height: 570px;
-  padding: 0 32px;
+  padding: 0 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modalBox {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .close-btn-modal {
@@ -948,8 +964,8 @@ address {
   border: none;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 32px;
+  right: 32px;
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
@@ -962,69 +978,129 @@ address {
   }
 }
 
+.circleTitile {
+  z-index: -1;
+  background: linear-gradient(0deg, #fffbdd85 52%, #9997854d 100%);
+  border-radius: 50% / 36% 35% 65% 64%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+}
+
 .title-modal {
-  letter-spacing: .02em;
+  letter-spacing: .1em;
   color: #263e24;
   text-align: center;
-  padding: 39px 0 24px;
-  font-size: 43px;
-  font-weight: 400;
+  padding: 61px 0 32px;
+  font-size: 45px;
+  font-weight: 100;
 }
 
 .text-modal {
   padding-bottom: 32px;
 }
 
-.text-modal__item {
+.text-modal-item {
+  letter-spacing: .05em;
   color: #423d1b;
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.text-modal__item:last-child {
+.text-modal-item:last-child {
   margin-bottom: 0;
+}
+
+.ps-text {
+  letter-spacing: .01em;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .subtitle-modal {
   letter-spacing: .02em;
   color: #263e24;
   padding-bottom: 16px;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.subtitle-modal-second {
+  justify-content: center;
+  padding: 0;
+  display: flex;
 }
 
 .modal-descr {
-  padding-bottom: 20px;
+  padding-bottom: 52px;
 }
 
-.modal-descr__item {
+.modal-descr-item {
+  letter-spacing: .05em;
   color: #423d1b;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-.modal-descr__item:last-child {
+.modal-descr-item:last-child {
   margin-bottom: 0;
+}
+
+.modalReservedBox {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.modalContactBox {
+  justify-content: center;
+  padding-top: 20px;
+  display: flex;
 }
 
 .contact-modal {
   letter-spacing: .05em;
   color: #423d1b;
   margin-right: 32px;
-  font-size: 21px;
+  font-size: 25px;
+  font-weight: 300;
 }
 
 .contact-modal:last-of-type {
   margin-right: 0;
 }
 
-.menu-social-modal {
+.socialModal {
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 52px;
   padding-bottom: 32px;
   display: flex;
 }
 
-.menu-social__modal {
+.socialModalList {
+  justify-content: center;
+  display: flex;
+}
+
+.socialModalItem {
+  margin-right: 8px;
+}
+
+.socialModalItem:last-child {
+  margin-right: 0;
+}
+
+.socialModalLink {
   letter-spacing: .01em;
   color: #263e24;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.socialModalBorder {
+  border-right: 1px solid #21212133;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=index.b07a87f3.css.map */

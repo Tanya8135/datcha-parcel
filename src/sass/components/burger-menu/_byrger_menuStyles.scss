@@ -39,8 +39,10 @@
 }
 
 .ps-text {
-  @include short-font(16px, 0.01em);
+  @include font(18px, 400, 0.01em);
 
+  display: flex;
+  justify-content: center;
   font-style: italic;
 }
 
