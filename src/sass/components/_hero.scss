@@ -9,33 +9,33 @@
       url(../images/alley-fon@2-414.jpg);
   }
 
-  //   @include tabletMin {
-  //     // max-width: 1024px;
-  //     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
-  //       url(../images/alley-fon-1024.jpg);
+  @include tabletMin {
+    // max-width: 1024px;
+    background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+      url(../images/alley-fon-1024.jpg);
 
-  //     @include retina {
-  //       background-image: linear-gradient(
-  //           $bg-fon-transparent,
-  //           $bg-fon-transparent
-  //         ),
-  //         url(../images/alley-fon@2-1024.jpg);
-  //     }
-  //   }
+    @include retina {
+      background-image: linear-gradient(
+          $bg-fon-transparent,
+          $bg-fon-transparent
+        ),
+        url(../images/alley-fon@2-1024.jpg);
+    }
+  }
 
-  //   @include desktop {
-  //     max-width: 1600px;
-  //     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
-  //       url(../images/alley-fon-1180.jpg);
+  @include desktop {
+    max-width: 1600px;
+    background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+      url(../images/alley-fon-1180.jpg);
 
-  //     @include retina {
-  //       background-image: linear-gradient(
-  //           $bg-fon-transparent,
-  //           $bg-fon-transparent
-  //         ),
-  //         url(../images/alley-fon@2-1180.jpg);
-  //     }
-  //   }
+    @include retina {
+      background-image: linear-gradient(
+          $bg-fon-transparent,
+          $bg-fon-transparent
+        ),
+        url(../images/alley-fon@2-1180.jpg);
+    }
+  }
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,19 +44,23 @@
   padding-top: 0;
 }
 
+.heroContaier {
+  @include tabletMin {
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 .title-hero {
-  //   @include desktop {
-  //     font-size: 190px;
-  //     padding-top: 150px;
-  //   }
+  @include desktop {
+    font-size: 190px;
+    padding-top: 150px;
+  }
 
-  //   @include tablet {
-  //     @include short-font(140px, 0.25em);
-  //   }
-
-  //   @include min-mobile {
-  //     @include short-font(80px, 0.15em);
-  //   }
+  @include tablet {
+    @include short-font(140px, 0.25em);
+  }
 
   @include short-font(85px, 00.15em);
 
@@ -69,14 +73,14 @@
 }
 
 .subtitle-hero {
-  //   @include desktop {
-  //     font-size: 40px;
-  //     padding-bottom: 32px;
-  //   }
+  @include desktop {
+    font-size: 40px;
+    padding-bottom: 32px;
+  }
 
-  //   @include tablet {
-  //     @include short-font(30px, 0.15em);
-  //   }
+  @include tablet {
+    @include short-font(30px, 0.15em);
+  }
 
   @include font(20px, 600, 0.15em);
 
@@ -86,13 +90,54 @@
   padding-bottom: 165px;
 }
 
-.social {
+.heroBoxContactSocial {
+  @include tabletMin {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 40px;
+  }
+
   display: flex;
   justify-content: end;
-  padding: 0 15px 32px;
+  padding: 0 10px 10px 0;
+}
+
+.contactHero {
+  @include tabletMin {
+    display: block;
+  }
+
+  display: none;
+}
+
+.contactHeroItem {
+  display: flex;
+  align-items: center;
+  fill: $icon-social;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contactHeroLink {
+  @include font(20px, 800, 0.08em);
+  color: $icon-social;
+  margin-left: 4px;
+}
+
+.social {
+  display: flex;
 }
 
 .social_item {
+  @include tabletMin {
+    padding: 0;
+    margin-right: 32px;
+  }
+  padding: 5px;
   margin-right: 30px;
 
   &:last-child {

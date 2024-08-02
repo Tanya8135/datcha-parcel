@@ -1,4 +1,7 @@
 .header {
+  @include tabletMin {
+    padding: 29px 52px;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +9,11 @@
   background-color: $secondary-bg;
 }
 
-.butgerMenu {
+.burgerMenu {
+  @include tabletMin {
+    display: none;
+  }
+
   fill: $icon-burger-menu;
   background-color: transparent;
   border: none;
@@ -16,3 +23,37 @@
   padding: 15px 0px;
 }
 
+.nav-site {
+  @include tabletMin {
+    display: flex;
+    justify-content: center;
+  }
+  display: none;
+}
+
+.nav-site-item {
+  @include tabletMin {
+    display: block;
+    margin-right: 68px;
+  }
+  display: none;
+}
+
+.btn-hero-prise {
+  @include tabletMin {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  display: none;
+}
+
+.nav-site-link {
+  @include tabletMin {
+    display: block;
+    @include short-font(20px, 0.05em);
+  }
+
+  display: none;
+}

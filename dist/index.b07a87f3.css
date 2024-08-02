@@ -5,7 +5,7 @@ html {
 body, button {
   color: #263e24;
   background-color: #fffbdd;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: Roboto Slab, serif;
   overflow-x: hidden;
@@ -121,7 +121,13 @@ address {
   display: flex;
 }
 
-.butgerMenu {
+@media screen and (width >= 768px) {
+  .header {
+    padding: 29px 52px;
+  }
+}
+
+.burgerMenu {
   fill: #263e24;
   cursor: none;
   background-color: #0000;
@@ -129,6 +135,58 @@ address {
   outline: none;
   margin: 0;
   padding: 15px 0;
+}
+
+@media screen and (width >= 768px) {
+  .burgerMenu {
+    display: none;
+  }
+}
+
+.nav-site {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav-site {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.nav-site-item {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav-site-item {
+    margin-right: 68px;
+    display: block;
+  }
+}
+
+.btn-hero-prise {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .btn-hero-prise {
+    background-color: #0000;
+    border: none;
+    display: block;
+  }
+}
+
+.nav-site-link {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav-site-link {
+    letter-spacing: .05em;
+    font-size: 20px;
+    display: block;
+  }
 }
 
 .page-header .conteiner {
@@ -335,6 +393,39 @@ address {
   }
 }
 
+@media screen and (width >= 768px) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon-1024.74f7de43.jpg");
+  }
+}
+
+@media screen and (width >= 768px) and (min-device-pixel-ratio: 2), screen and (width >= 768px) and (resolution >= 192dpi), screen and (width >= 768px) and (resolution >= 2x) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon@2-1024.2320f4db.jpg");
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon-1180.dabba638.jpg");
+    max-width: 1600px;
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) and (min-device-pixel-ratio: 2), screen and (width >= 1024px) and (width <= 1920px) and (resolution >= 192dpi), screen and (width >= 1024px) and (width <= 1920px) and (resolution >= 2x) {
+  .hero {
+    background-image: linear-gradient(#0006, #0006), url("alley-fon@2-1180.9eecc4ab.jpg");
+  }
+}
+
+@media screen and (width >= 768px) {
+  .heroContaier {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .title-hero {
   letter-spacing: .15em;
   text-align: center;
@@ -344,6 +435,20 @@ address {
   font-family: Marck Script, cursive;
   font-size: 85px;
   transform: translateX(5px);
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .title-hero {
+    padding-top: 150px;
+    font-size: 190px;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .title-hero {
+    letter-spacing: .25em;
+    font-size: 140px;
+  }
 }
 
 .subtitle-hero {
@@ -356,14 +461,78 @@ address {
   font-weight: 600;
 }
 
-.social {
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .subtitle-hero {
+    padding-bottom: 32px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .subtitle-hero {
+    letter-spacing: .15em;
+    font-size: 30px;
+  }
+}
+
+.heroBoxContactSocial {
   justify-content: end;
-  padding: 0 15px 32px;
+  padding: 0 10px 10px 0;
+  display: flex;
+}
+
+@media screen and (width >= 768px) {
+  .heroBoxContactSocial {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    display: flex;
+  }
+}
+
+.contactHero {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .contactHero {
+    display: block;
+  }
+}
+
+.contactHeroItem {
+  fill: #cdcab3;
+  align-items: center;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.contactHeroItem:last-child {
+  margin-bottom: 0;
+}
+
+.contactHeroLink {
+  letter-spacing: .08em;
+  color: #cdcab3;
+  margin-left: 4px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.social {
   display: flex;
 }
 
 .social_item {
   margin-right: 30px;
+  padding: 5px;
+}
+
+@media screen and (width >= 768px) {
+  .social_item {
+    margin-right: 32px;
+    padding: 0;
+  }
 }
 
 .social_item:last-child {
@@ -383,8 +552,57 @@ address {
   padding: 0 15px;
 }
 
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .footer {
+    padding: 0 32px 20px;
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .footer {
+    padding: 32px;
+  }
+
+  .footerContainer {
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.footer-box {
+  display: block;
+}
+
+@media screen and (width >= 768px) {
+  .footer-box {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    display: flex;
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .footer-box {
+    min-width: 700px;
+  }
+}
+
 .logoFooter {
   padding: 15px 0;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .logoFooter {
+    padding: 0;
+  }
+}
+
+.logoImg {
+  width: 200px;
 }
 
 .subtitle-footer {
@@ -395,17 +613,17 @@ address {
   font-weight: 600;
 }
 
-@media screen and (width >= 1024px) and (width <= 1920px) {
-  .subtitle-footer {
-    font-size: 24px;
-  }
-}
-
 .contact-item {
   color: #263e24;
   align-items: center;
   padding-bottom: 20px;
   display: flex;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .contact-item {
+    padding-bottom: 12px;
+  }
 }
 
 .contact-item:last-child {
@@ -414,17 +632,17 @@ address {
 
 .contact-link {
   letter-spacing: .05em;
-  font-size: 20px;
-}
-
-@media screen and (width >= 1024px) and (width <= 1920px) {
-  .contact-link {
-    font-size: 24px;
-  }
+  font-size: 18px;
 }
 
 .address-box {
   padding: 32px 0;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .address-box {
+    justify-content: start;
+  }
 }
 
 .map-box {
@@ -432,14 +650,20 @@ address {
   display: flex;
 }
 
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .map-box {
+    margin-right: 5px;
+  }
+}
+
 .map-icon {
   margin-right: 5px;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 
 .address-link {
   letter-spacing: .05em;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .social-footer {
@@ -449,17 +673,63 @@ address {
   display: flex;
 }
 
+@media screen and (width >= 768px) {
+  .social-footer {
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .icon-color-footer {
   fill: #423d1b;
 }
 
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .btnBoxReserved {
+    justify-content: end;
+    display: flex;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .btnReserved {
+    letter-spacing: .01em;
+    background-color: #fff8bf;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px 38px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .btnReserved:active {
+    box-shadow: inset 0 0 2px #00000080;
+  }
+}
+
+@media screen and (width >= 1024px) and (width <= 1920px) {
+  .boxForReserved {
+    transform: translateY(20px);
+  }
+}
+
 .about {
-  padding-top: 52px;
+  padding: 52px 0;
+}
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .about {
+    max-width: 738px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
   .about {
-    padding-top: 92px;
+    max-width: 1170px;
+    margin: 0 auto;
   }
 }
 
@@ -475,16 +745,16 @@ address {
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
   .titleAbout {
-    padding: 0 0 52px 38px;
-    font-size: 70px;
+    padding: 0 0 32px 38px;
+    font-size: 45px;
   }
 }
 
 @media screen and (width >= 768px) and (width <= 1023px) {
   .titleAbout {
     letter-spacing: .05em;
-    padding: 0 0 44px 38px;
-    font-size: 60px;
+    padding: 0 0 20px;
+    font-size: 32px;
   }
 }
 
@@ -509,7 +779,7 @@ address {
   }
 }
 
-.textAbout--bottom {
+.textAbout:last-child {
   margin-bottom: 0;
 }
 
@@ -533,9 +803,17 @@ address {
   padding: 0 15px 52px;
 }
 
+@media screen and (width >= 768px) and (width <= 1023px) {
+  .photo {
+    max-width: 702px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (width >= 1024px) and (width <= 1920px) {
   .photo {
-    margin-bottom: 56px;
+    max-width: 1170px;
+    margin: 0 auto;
   }
 }
 
@@ -552,22 +830,23 @@ address {
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
   .title-foto {
-    font-size: 70px;
+    font-size: 45px;
   }
 }
 
 @media screen and (width >= 768px) and (width <= 1023px) {
   .title-foto {
     letter-spacing: .05em;
-    padding: 0 0 20px 138px;
-    font-size: 60px;
+    margin: 0;
+    padding: 0 0 32px;
+    font-size: 36px;
   }
 }
 
 .subtitle-foto {
   letter-spacing: .05em;
   color: #423d1b;
-  padding: 0 0 48px 84px;
+  padding: 0 0 32px 84px;
   font-family: EB Garamond, sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -575,12 +854,8 @@ address {
 
 @media screen and (width >= 768px) {
   .subtitle-foto {
-    font-size: 50px;
+    font-size: 32px;
   }
-}
-
-.subtitle-foto--style {
-  padding-top: 52px;
 }
 
 .swiper {
@@ -598,8 +873,6 @@ address {
 .swiper-slide img {
   object-fit: cover;
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
   display: block;
 }
 
