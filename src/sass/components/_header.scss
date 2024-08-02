@@ -45,9 +45,15 @@
     background-color: transparent;
     border: none;
   }
+
   display: none;
 }
 
 .nav-site-link {
-  @include short-font(20px, 0.05em);
+  @include tabletMin {
+    display: block;
+    @include short-font(20px, 0.05em);
+  }
+
+  display: none;
 }
