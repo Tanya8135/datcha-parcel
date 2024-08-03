@@ -992,7 +992,6 @@ address {
 .swiper-slide img {
   object-fit: cover;
   border-radius: 10px;
-  width: 100%;
   display: block;
 }
 

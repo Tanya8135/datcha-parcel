@@ -64,12 +64,13 @@
   @include tablet {
     max-width: 590px;
   }
+  
   @include desktop {
     max-width: 700px;
   }
   display: block;
   border-radius: 10px;
-  width: 100%;
+  // width: 100%;
   // max-width: 320px;
   // max-width: 320px;
   // width: 100%;
