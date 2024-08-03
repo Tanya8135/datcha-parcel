@@ -26,7 +26,7 @@
   }
 
   @include mobileMax {
-    max-width: 320px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -51,11 +51,15 @@
     padding: 0;
   }
 
-  padding: 15px 0;
+  padding: 32px 0 15px 0;
 }
 
 .logoImg {
-  width: 200px;
+  @include tabletMin {
+    width: 200px;
+  }
+
+  width: 170px;
 }
 
 .subtitle-footer {

@@ -62,6 +62,10 @@
     @include short-font(140px, 0.25em);
   }
 
+  @include mobile {
+    font-size: 75px;
+  }
+
   @include short-font(85px, 00.15em);
 
   font-family: 'Marck Script', cursive;
@@ -69,7 +73,6 @@
   color: $hero-title;
   text-shadow: 4px 8px 8px $accent-shadow;
   padding-top: 165px;
-  transform: translateX(-5px);
 }
 
 .subtitle-hero {

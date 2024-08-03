@@ -249,7 +249,7 @@ address {
   background-color: #fffbdd;
   width: 100vw;
   height: 100vh;
-  padding: 15px;
+  padding: 15px 10px;
   transition: transform .25s cubic-bezier(.4, 0, .2, 1);
   position: fixed;
   top: 0;
@@ -276,7 +276,7 @@ address {
   font-weight: 300;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .price-bm-title {
     font-size: 27px;
   }
@@ -293,12 +293,12 @@ address {
 
 .BM-item {
   justify-content: space-between;
-  margin: 0 auto 20px;
-  padding: 0 30px;
+  margin: 0 auto 32px;
+  padding: 0 10px;
   display: flex;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .BM-item {
     margin: 0 auto 20px;
     padding: 0 5px;
@@ -306,17 +306,23 @@ address {
 }
 
 .BM-item:last-of-type {
-  margin-bottom: 32px;
+  margin-bottom: 52px;
+}
+
+@media screen and (width >= 320px) and (width <= 374px) {
+  .BM-item:last-of-type {
+    margin-bottom: 32px;
+  }
 }
 
 .BM-text {
   letter-spacing: .01em;
-  max-width: 282px;
-  font-size: 16px;
+  max-width: 281px;
+  font-size: 18px;
   font-weight: 300;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .BM-text {
     max-width: 180px;
     font-size: 14px;
@@ -325,12 +331,11 @@ address {
 
 .BM-prise {
   letter-spacing: .01em;
-  margin-left: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .BM-prise {
     font-size: 14px;
   }
@@ -344,7 +349,7 @@ address {
   font-weight: 400;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .ps-text {
     font-size: 12px;
   }
@@ -358,11 +363,11 @@ address {
 .price-bm-subtitle {
   letter-spacing: .05em;
   margin-bottom: 12px;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 300;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .price-bm-subtitle {
     font-size: 18px;
   }
@@ -372,11 +377,11 @@ address {
   letter-spacing: .01em;
   margin-bottom: 8px;
   margin-left: 16px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .BM-item-descr {
     font-size: 14px;
   }
@@ -406,7 +411,7 @@ address {
   text-decoration: none;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .menuContactsLink {
     font-size: 16px;
   }
@@ -419,7 +424,7 @@ address {
   display: flex;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .address-bm-box {
     padding-bottom: 32px;
   }
@@ -431,11 +436,11 @@ address {
 
 .address-link-bm {
   letter-spacing: .03em;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
-@media screen and (width >= 320px) and (width <= 449px) {
+@media screen and (width >= 320px) and (width <= 374px) {
   .address-link-bm {
     font-size: 14px;
   }
@@ -525,7 +530,6 @@ address {
   padding-top: 165px;
   font-family: Marck Script, cursive;
   font-size: 85px;
-  transform: translateX(-5px);
 }
 
 @media screen and (width >= 1024px) and (width <= 1920px) {
@@ -539,6 +543,12 @@ address {
   .title-hero {
     letter-spacing: .25em;
     font-size: 140px;
+  }
+}
+
+@media screen and (width >= 320px) and (width <= 374px) {
+  .title-hero {
+    font-size: 75px;
   }
 }
 
@@ -663,9 +673,9 @@ address {
   }
 }
 
-@media screen and (width >= 450px) and (width <= 767px) {
+@media screen and (width >= 375px) and (width <= 767px) {
   .footerContainer {
-    max-width: 320px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -690,7 +700,7 @@ address {
 }
 
 .logoFooter {
-  padding: 15px 0;
+  padding: 32px 0 15px;
 }
 
 @media screen and (width >= 768px) and (width <= 1023px) {
@@ -700,7 +710,13 @@ address {
 }
 
 .logoImg {
-  width: 200px;
+  width: 170px;
+}
+
+@media screen and (width >= 768px) {
+  .logoImg {
+    width: 200px;
+  }
 }
 
 .subtitle-footer {
