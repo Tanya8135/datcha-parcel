@@ -3,7 +3,7 @@
     font-size: 27px;
   }
 
-  @include font(35px, 100, 0.05em);
+  @include font(35px, 300, 0.05em);
   padding: 12px 0 24px 0;
   text-align: center;
 }
@@ -81,7 +81,7 @@
     font-size: 18px;
   }
 
-  @include font(23px, 100, 0.05em);
+  @include font(23px, 300, 0.05em);
   margin-bottom: 12px;
 }
 

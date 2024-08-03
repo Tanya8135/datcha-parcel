@@ -16,7 +16,7 @@
 77D:\work-portfolio\datcha-parcel\node_modules\term-size\vendor\macos\term-size133646661199905302 0
 122D:\work-portfolio\datcha-parcel\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\8-restructRuleset.js133646661201668429 0
 94D:\work-portfolio\datcha-parcel\node_modules\pngquant-bin\node_modules\shebang-regex\readme.md133646661200102129 0
-87D:\work-portfolio\datcha-parcel\src\sass\components\burger-menu\_byrger_menuStyles.scss133671044742523264 0
+87D:\work-portfolio\datcha-parcel\src\sass\components\burger-menu\_byrger_menuStyles.scss133671697836481102 0
 78D:\work-portfolio\datcha-parcel\node_modules\css-tree\cjs\generator\create.cjs133646661203832607 0
 68D:\work-portfolio\datcha-parcel\node_modules\node-addon-api\index.js133646661203245680 0
 67D:\work-portfolio\datcha-parcel\node_modules\undici-types\pool.d.ts133646661204226165 0
@@ -61,7 +61,7 @@
 61D:\work-portfolio\datcha-parcel\node_modules\svgo\lib\svgo.js133646661204175473 0
 68D:\work-portfolio\datcha-parcel\node_modules\tar-stream\package.json133646661197824559 0
 78D:\work-portfolio\datcha-parcel\node_modules\es-abstract\2019\IteratorClose.js133646661213050452 0
-36D:\work-portfolio\datcha-parcel\dist133671044743559111 1
+36D:\work-portfolio\datcha-parcel\dist133671697837947489 1
 68D:\work-portfolio\datcha-parcel\node_modules\object-assign\readme.md133646661199419405 0
 68D:\work-portfolio\datcha-parcel\node_modules\url-parse-lax\readme.md133646661199419405 0
 82D:\work-portfolio\datcha-parcel\node_modules\fast-xml-parser\src\v5\OutputBuilders133646661204226165 1
@@ -2906,7 +2906,7 @@
 97D:\work-portfolio\datcha-parcel\node_modules\decompress-targz\node_modules\file-type\package.json133646661197834819 0
 59D:\work-portfolio\datcha-parcel\node_modules\tslib\tslib.js133646661200480580 0
 111D:\work-portfolio\datcha-parcel\node_modules\imagemin-svgo\node_modules\csso\node_modules\css-tree\lib\index.js133646661205769326 0
-55D:\work-portfolio\datcha-parcel\dist\index.b07a87f3.css133671044743549107 0
+55D:\work-portfolio\datcha-parcel\dist\index.b07a87f3.css133671697837927483 0
 79D:\work-portfolio\datcha-parcel\node_modules\@swc\helpers\_\_is_native_function133646661209669585 1
 96D:\work-portfolio\datcha-parcel\node_modules\safe-array-concat\node_modules\isarray\package.json133646661197834819 0
 75D:\work-portfolio\datcha-parcel\node_modules\es-abstract\2015\DaysInYear.js133646661210439833 0
@@ -13362,4 +13362,4 @@
 61D:\work-portfolio\datcha-parcel\dist\terrain_270.885d309f.jpg133671040415482020 0
 58D:\work-portfolio\datcha-parcel\dist\view_700.35023c9f.jpg133671040413516648 0
 60D:\work-portfolio\datcha-parcel\.github\workflows\deploy.yml133646666317831533 0
-59D:\work-portfolio\datcha-parcel\dist\index.b07a87f3.css.map133671044743559111 0
+59D:\work-portfolio\datcha-parcel\dist\index.b07a87f3.css.map133671697837937490 0
